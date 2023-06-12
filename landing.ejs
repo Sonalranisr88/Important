@@ -1,0 +1,31 @@
+<%- include ('./partials/header') %>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>YelpCamp</title>
+    </head>
+    <body>
+    
+    <div class="container">
+        <% if(error && error.length > 0){ %>
+            <div class="alert alert-danger" role="alert">
+                <%= error %>
+            </div>
+        <% } %>
+        <% if(success && success.length > 0){ %>
+            <div class="alert alert-success" role="alert">
+                <%= success %>
+            </div>
+        <% } %>
+    </div>
+    
+    <div id="landing-header">
+ 		<h1>Welcome to Sonal's Project!</h1>
+		<a href="/campgrounds" class="btn btn-lg btn-success">View All Campgrounds</a>
+    </div>
+    
+    
+<%- include ('./partials/footer') %>
+
+/home/aman/Desktop/sonal rani/jdk-20.0.1/bin
